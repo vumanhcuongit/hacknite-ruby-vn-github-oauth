@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Provider:
+  = @user.provider
+%p
+  %b Uid:
+  = @user.uid
+%p
+  %b Name:
+  = @user.name
+%p
+  %b Oauth token:
+  = @user.oauth_token
+%p
+  %b Oauth expires at:
+  = @user.oauth_expires_at
+
+= link_to 'Edit', edit_user_path(@user)
+\|
+= link_to 'Back', users_path

@@ -1,0 +1,29 @@
+%h1 Listing users
+
+%table
+  %thead
+    %tr
+      %th Provider
+      %th Uid
+      %th Name
+      %th Oauth token
+      %th Oauth expires at
+      %th
+      %th
+      %th
+
+  %tbody
+    - @users.each do |user|
+      %tr
+        %td= user.provider
+        %td= user.uid
+        %td= user.name
+        %td= user.oauth_token
+        %td= user.oauth_expires_at
+        %td= link_to 'Show', user
+        %td= link_to 'Edit', edit_user_path(user)
+        %td= link_to 'Destroy', user, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New User', new_user_path
