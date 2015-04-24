@@ -1,4 +1,4 @@
-Solve ruby-vietnam/hacknite#21
+Solve [a issue](https://github.com/ruby-vietnam/hacknite/issues/21)
 
 # hacknite-ruby-vn-github-oauth
 Hacknite 2 at Ruby Vietnam
